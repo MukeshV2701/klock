@@ -1,0 +1,72 @@
+* {
+    margin: auto;
+    padding: 0, auto;
+    box-sizing: border-box;
+}
+
+.container {
+    
+    position: absolute;
+    left: 27%;
+    top: 45%;
+
+    /* background-color: rgba(a, b, c); */
+    height: 40vh;
+    width: 60vw;
+    /* align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center; */
+    text-align: center;
+    margin: auto;
+    /*ye kaam ka h*/
+    /* vertical-align: auto; */
+    /* position: relative;
+    position: absolute;
+    top: 50%;
+    transform: translateX(+50%);
+    transform: translateY(-50%); */
+    border-radius: 20px;
+}
+
+.preloader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999999;
+}
+
+.loader{
+    height: 69px;
+    width: 69px;
+    border: 7px solid black;
+    border-radius: 50%;
+    position: absolute;
+    border-top: 7px solid hotpink;
+    top: 45%;
+    left: 45%;
+    animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
+}
+
+.content {
+    color: #b61818;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+    font-size: 2.7rem;
+    font-family: 'Source Code Pro', monospace;
+}
